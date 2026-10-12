@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: marks
+  name: staging-marks
 
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: marks
-  namespace: marks
+  namespace: staging-marks
   labels:
     app: marks
 spec:
@@ -41,7 +41,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: marks
-  namespace: marks
+  namespace: staging-marks
 spec:
   selector:
     app: marks
