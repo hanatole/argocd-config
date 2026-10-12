@@ -23,7 +23,7 @@ spec:
     spec:
      containers:
       - name: marks
-        image: ahagbes/mark:1.0.0
+        image: ahagbes/marks@sha256:2c01367a6bda8154f833e91cf1de78fa4cbbbb45d9d14b33abf277a2649d0acb
         resources:
           requests:
             cpu: 100m
